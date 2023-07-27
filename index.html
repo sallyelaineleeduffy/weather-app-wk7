@@ -10,7 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Weather App</title>
   </head>
   <body>
@@ -20,7 +22,7 @@
           <div class="overview">
             <div class="row">
               <div class="col-7">
-                <h1>New York</h1>
+                <h1 id="city">New York</h1>
               </div>
               <div class="col-5">
                 <div class="weather-temperature">
@@ -28,7 +30,7 @@
                     src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                     alt="Partially Cloudy"
                   />
-                  <strong>19</strong
+                  <strong id="temperature">19</strong
                   ><span class="units">
                     <a href="#">ºC</a> | <a href="#">ºF</a></span
                   >
