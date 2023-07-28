@@ -15,6 +15,27 @@ function formatTime(timestamp) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+let now = new Date();
+let dateFull = now.getDate();
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let month = months[now.getMonth()];
+let year = now.getFullYear();
+let dateElement = document.querySelector("#date");
+dateElement.innerHTML = `${dateFull} ${month} ${year}`;
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -22,14 +43,12 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let humidityElement = document.querySelector("#humidity");
   let timeElement = document.querySelector("#time");
-  let dateElement = document.querySelector("#date");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.temperature.humidity;
   timeElement.innerHTML = formatTime(response.data.time * 1000);
-  dateElement.innerHTML = "6th June 2023";
 }
 
 let apiKey = "f1ef93f40de3d662400b2dt0aa8a2o91";
