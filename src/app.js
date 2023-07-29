@@ -37,7 +37,6 @@ let dateElement = document.querySelector("#date");
 dateElement.innerHTML = `${dateFull} ${month} ${year}`;
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
