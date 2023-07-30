@@ -42,6 +42,15 @@ li:first-letter {
   border: 1px solid #43b02a;
   border-radius: 5px;
 }
+
+.weather-container #form-search-box {
+  margin-left: 20px;
+  width: 90%;
+}
+.weather-container #button-search-form {
+  background: #43b02a;
+  color: white;
+}
 .overview {
   margin-bottom: 20px;
 }
