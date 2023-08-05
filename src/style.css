@@ -49,11 +49,13 @@ li:first-letter {
 
 .weather-container #form-search-box {
   margin-left: 20px;
+  margin-top: 20px;
   width: 90%;
 }
 .weather-container #button-search-form {
   background: #43b02a;
   color: white;
+  margin-top: 20px;
 }
 .overview {
   margin-bottom: 20px;
@@ -84,4 +86,19 @@ li:first-letter {
   color: #63666a;
   cursor: default;
   text-decoration: none;
+}
+.weather-forecast-day {
+  margin-top: 20px;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  margin-left: 5px;
+}
+.weather-forecast-temp-max {
+  font-size: 16px;
+  color: #63666a;
+}
+.weather-forecast-temp-min {
+  font-size: 16px;
+  color: #63666a;
 }
