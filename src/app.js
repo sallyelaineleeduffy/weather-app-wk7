@@ -42,6 +42,23 @@ let year = now.getFullYear();
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = `${dateFull} ${month} ${year}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `
+   <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-day">
+                  <h3>Mon</h3>
+                  <h3>️️️☀️</h3>
+                </div>
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temp-max"> 22º</span>
+                  <span class="weather-forecast-temp-min"> 12º</span>
+                </div>
+              </div>
+            </div>`;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -108,3 +125,4 @@ let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", changeTemperatureCelsius);
 
 search("London");
+displayForecast();
