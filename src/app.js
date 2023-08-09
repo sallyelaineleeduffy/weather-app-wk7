@@ -44,19 +44,26 @@ dateElement.innerHTML = `${dateFull} ${month} ${year}`;
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = `
-   <div class="row">
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thurs", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
               <div class="col-2">
                 <div class="weather-forecast-day">
-                  <h3>Mon</h3>
+                  <h3>${day}</h3>
                   <h3>️️️☀️</h3>
                 </div>
                 <div class="weather-forecast-temperatures">
                   <span class="weather-forecast-temp-max"> 22º</span>
                   <span class="weather-forecast-temp-min"> 12º</span>
                 </div>
-              </div>
             </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
