@@ -73,20 +73,7 @@ li:first-letter {
   position: relative;
   top: -10px;
 }
-.weather-temperature .active {
-  color: #43b02a;
-  cursor: default;
-  text-decoration: none;
-}
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
 
-.weather-temperature .remove-link {
-  color: #63666a;
-  cursor: default;
-  text-decoration: none;
-}
 .weather-forecast-day {
   margin-top: 20px;
   font-size: 20px;
