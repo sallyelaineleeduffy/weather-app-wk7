@@ -42,7 +42,8 @@ let year = now.getFullYear();
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = `${dateFull} ${month} ${year}`;
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -66,7 +67,9 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 function getForecast(coordinates) {
-  console.log(coordinates);
+  let apiKey = "f1ef93f40de3d662400b2dt0aa8a2o91";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -136,4 +139,3 @@ let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", changeTemperatureCelsius);
 
 search("London");
-displayForecast();
