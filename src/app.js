@@ -70,6 +70,7 @@ function displayForecast(response) {
                     forecastDay.condition.icon
                   }.png"
                   class="icon-day"
+                  width="40"
                   />
               
                 <div class="weather-forecast-temperatures">

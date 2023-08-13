@@ -89,24 +89,25 @@ li:first-letter {
 }
 .weather-forecast-day {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 20px;
   color: #63666a;
   text-align: center;
 }
-.weather-forecast-day .icon-day {
-  font-size: 24px;
-  color: #63666a;
-  text-align: center;
+.icon-day {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 .weather-forecast-temperatures {
   text-align: center;
   margin-left: 5px;
 }
 .weather-forecast-temp-max {
-  font-size: 16px;
+  font-size: 14px;
   color: #63666a;
 }
 .weather-forecast-temp-min {
-  font-size: 16px;
+  font-size: 14px;
   color: #63666a;
 }
