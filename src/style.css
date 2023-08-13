@@ -89,6 +89,14 @@ li:first-letter {
 }
 .weather-forecast-day {
   margin-top: 20px;
+  font-size: 24px;
+  color: #63666a;
+  text-align: center;
+}
+.weather-forecast-day .icon-day {
+  font-size: 24px;
+  color: #63666a;
+  text-align: center;
 }
 .weather-forecast-temperatures {
   text-align: center;
