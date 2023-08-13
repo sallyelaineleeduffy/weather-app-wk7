@@ -51,14 +51,16 @@ li:first-letter {
   margin-left: 20px;
   margin-top: 20px;
   width: 90%;
+  border-color: #43b02a;
 }
 .weather-container #button-search-form {
   background: #43b02a;
   color: white;
   margin-top: 20px;
+  margin-left: -15px;
 }
 .overview {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .weather-temperature strong {
   font-size: 38px;
@@ -73,7 +75,10 @@ li:first-letter {
   position: relative;
   top: -10px;
 }
-
+.weather-forecast {
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
 .weather-forecast-day {
   margin-top: 20px;
   font-size: 20px;
